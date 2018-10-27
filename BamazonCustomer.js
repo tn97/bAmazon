@@ -9,7 +9,6 @@ var connection = mysql.createConnection({
   database: "bamazon_DB"
 });
 
-
 connection.connect(function(err) {
   // throws an error upon finding issue
   if (err) throw err;
@@ -36,9 +35,7 @@ function start() {
     });
 }
 
-
 function returnItem() {
-  
   inquirer
     .prompt([
       {
